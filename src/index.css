@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Fraunces';
+	src: url('assets/fonts/DMSans.ttf');
+  }
+
+:root {
+  color: #82846D;
+  background-color: #F2F5EA;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces";
+}
