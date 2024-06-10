@@ -8,6 +8,16 @@
   background-color: #F2F5EA;
 }
 
+::-moz-selection {
+  background-color: #82846D ;
+  color: #F2F5EA;
+}
+
+::selection {
+  background-color: #82846D ;
+  color: #F2F5EA;
+}
+
 h1, h2, h3 {
   font-family: "Fraunces";
 }
