@@ -1,0 +1,11 @@
+.cocktail-list {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 992px) {
+  .cocktail-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
