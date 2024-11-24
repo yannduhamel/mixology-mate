@@ -80,8 +80,22 @@
   color: var(--background-color);
 }
 
+header {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
 .main-title {
   text-align: center;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .question-container {
@@ -92,14 +106,8 @@
 }
 
 .footer-message {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  color: var(--main-color);
   text-align: center;
   padding: 1rem;
-  z-index: 1000;
 }
 
 .footer-link {
