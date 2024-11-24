@@ -77,26 +77,31 @@ export default function App() {
           </div>
         </div>
       )}
-      <h1 className="main-title">
-        Mixology Mate vous aide à trouver le cocktail parfait !
-      </h1>
 
-      {currentQuestion < questions.length ? (
-        <div className="question-container">
-          <Question
-            question={questions[currentQuestion]}
-            currentQuestion={currentQuestion}
-            filterCocktails={filterCocktails}
+      <header>
+        <h1 className="main-title">
+          Mixology Mate vous aide à trouver le cocktail parfait !
+        </h1>
+      </header>
+
+      <main className="main-content">
+        {currentQuestion < questions.length ? (
+          <div className="question-container">
+            <Question
+              question={questions[currentQuestion]}
+              currentQuestion={currentQuestion}
+              filterCocktails={filterCocktails}
+            />
+          </div>
+        ) : (
+          <ResultSection
+            cocktails={filteredCocktails}
+            resetSearch={resetSearch}
           />
-        </div>
-      ) : (
-        <ResultSection
-          cocktails={filteredCocktails}
-          resetSearch={resetSearch}
-        />
-      )}
+        )}
+      </main>
 
-      <div className="footer-message">
+      <footer className="footer-message">
         <p>
           L&apos;abus d&apos;alcool est dangereux pour la santé, à consommer
           avec modération.
@@ -111,7 +116,7 @@ export default function App() {
             Yann Duhamel
           </a>
         </p>
-      </div>
+      </footer>
     </div>
   );
 }
