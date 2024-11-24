@@ -1,0 +1,47 @@
+.cocktail-item {
+  border: 3px solid var(--main-color);
+  box-shadow: 3px 3px var(--main-color);
+  padding: 1rem;
+  margin: 1rem;
+  width: 330px;
+  height: 280px;
+}
+
+.cocktail-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.cocktail-link {
+  text-decoration: none;
+  color: var(--third-color);
+  font-weight: bold;
+}
+
+.cocktail-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 600px) {
+  .cocktail-name {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .cocktail-item {
+    height: 340px;
+  }
+
+  .cocktail-name {
+    font-size: 1.6rem;
+  }
+
+  .cocktail-element {
+    font-size: 1.2rem;
+  }
+
+  .cocktail-link {
+    font-size: 1.2rem;
+  }
+}

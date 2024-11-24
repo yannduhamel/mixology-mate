@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "question": "Je préfère les cocktails à base de...",
+    "answers": ["Rhum", "Vodka", "Gin", "Whisky"]
+  },
+  {
+    "id": 2,
+    "question": "Je souhaite un cocktail...",
+    "answers": ["Fruité", "Épicé", "Acidulé", "Corsé"]
+  },
+  {
+    "id": 3,
+    "question": "J'aimerais que le cocktail soit...",
+    "answers": ["Classique", "Original"]
+  }
+]

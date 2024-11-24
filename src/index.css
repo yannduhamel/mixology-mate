@@ -1,23 +1,63 @@
 @font-face {
-	font-family: 'Fraunces';
-	src: url('assets/fonts/DMSans.ttf');
-  }
+  font-family: "DMSans";
+  src: url("assets/fonts/DMSans.ttf");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("assets/fonts/Fraunces.ttf");
+}
 
 :root {
-  color: #82846D;
-  background-color: #F2F5EA;
+  --main-color: #144d4d;
+  --background-color: #f6e5c6;
+  --third-color: #d64933;
 }
 
-::-moz-selection {
-  background-color: #82846D ;
-  color: #F2F5EA;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-::selection {
-  background-color: #82846D ;
-  color: #F2F5EA;
+body {
+  background-color: var(--background-color);
+  color: var(--main-color);
+  padding: 0 1.5rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Fraunces";
+  font-weight: bolder;
+}
+
+p,
+a {
+  font-family: "DMSans";
+}
+
+h1 {
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
